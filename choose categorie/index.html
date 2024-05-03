@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            choose categorie
+        </title>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <button onclick="openPopup()" id="cate-choosed">
+            choose categorie
+        </button>
+        <div id="popup-parent" class="hidden">
+            <div class="popup" >
+                <h3>Choisir votre categorie</h3>
+                <div class="list" id="list">
+                    <span>
+                        categorie 1
+                    </span>
+                    <span>
+                        categorie 2
+                    </span>
+                    <span>
+                        categorie 3
+                    </span>
+                </div>
+                <div class="option">
+                    <button onclick="closePopup()" class="red">
+                        close
+                    </button>
+                    <button onclick="chooseCategorie()">
+                        ok
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

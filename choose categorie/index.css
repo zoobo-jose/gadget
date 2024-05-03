@@ -1,0 +1,77 @@
+button{
+    color:white;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: blue;
+    border:none;
+    padding:10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(84, 84, 253);
+}
+
+button.red{
+    background-color: red;
+}
+button.red:hover{
+    background-color: rgb(245, 75, 75);
+}
+button.black{
+    background-color: black;
+}
+button.black:hover{
+    background-color: rgb(62, 62, 62);
+}
+
+#popup-parent{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.09);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#popup-parent.hidden{
+    display:none;
+}
+
+#popup-parent .popup{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+#popup-parent .popup .list{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    margin-bottom: 10px;
+    height: 300px;
+    min-width: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#popup-parent .popup .list span{
+    display:inline-block;
+    padding:5px 10px;
+    border:solid 1px rgba(0, 0, 0, 0.307);
+    border-radius: 5px;
+    cursor:pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+#popup-parent .popup .list span:hover{
+    transform: scale(1.02);
+}
+#popup-parent .popup .list span.parent{
+    width:100%;
+    border:none;
+    font-size: 18px;
+    border-radius: 0px;
+    border-bottom: dashed 1px rgba(0, 0, 0, 0.373);
+    color:rgb(29, 195, 54);
+}
